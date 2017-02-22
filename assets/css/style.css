@@ -1,6 +1,6 @@
 
 body {
-	max-width: 960px
+	max-width: 960px;
 	background-color:#e5e5e5;
 	font-family: 'Libre Franklin', sans-serif;
 
@@ -10,7 +10,6 @@ body {
  }
 
 .wrapper {
-	max-width: 650px;
 	padding-left: 100px;
 	padding-right: 50px;
 	
@@ -43,11 +42,11 @@ body {
 	margin-left: 4%;
 	float: left;
 }
-.head nav ul {
+.header nav ul {
 
     overflow: hidden;
     background-color: #333;
-    margin-right: 20%;
+    
 }
 
 .header li {
@@ -61,70 +60,76 @@ body {
 
 
 
-
 }
 
  .header li a {
- 	display: inline-block;
     color: black;
     text-align: center;
-    padding: 0px 30px;
     text-decoration: none;
 
 }
 
 .main 
 	{
-	float: left;
-	font-size: 15px;
+	float: right;
+	font-size: 18px;
 	background-color: white;
 	top:300px;
-	height: 250px;
+	height: 400px;
 	width: 500px;
 	margin: 200px;
-	margin-left: 4%;
-	clear: both;	
+	margin-right: 42%;
+	position:static;
+
 	
 }
 
-.main-header {
+.main header {
 
 	background-color: #ffe761;
 	font-size: 16px;
 	font-weight: bold;
-	padding:  20px;
-	width: 450px;
-	margin-bottom: 10px 10px 0px 10px;
+	padding: 30px;
+	width: 440px;
+	margin: 0;
 }
-.photo {
-float: left;
-	margin: 10px 10px;
-	border: 5px;
+
+.photo img {
+	width: 300px;
+	height: 200px;
+	float:left;
+	margin: 10px;
 
 }
-.me-info {
+
+
 	
+}
+.me-info {
 	text-align: left;
 	padding:0px;
 	margin-left:10px;
 	border: 10px;
 }
 
-
+.main p {
+	line-height: 20px;
+	padding-top: 10px;
+	margin: 1px 1px 1px 1px;
+}
 .rightsidebar {
-	position: relative;
-	float: right;	
+	float: left;
+	clear: right;	
 	background-color: #ffffff;
 	margin: 200px;
 	height: 150px;
-	max-width:270px;
-	position: relative;
-	margin-right: 100px;
-	
+	margin-left: 60%;
+	position: absolute;
+		
 	
 }
 
-.right-header {
+.rightsidebar header {
 	background-color: #ffe761;
 	font-size: 16px;
 	font-weight: bold;
@@ -138,7 +143,7 @@ float: left;
 	align-content:center;
 	height: 60px;
 	width: 60px;
-	padding:0px
+	padding:0;
 	border:10px;
 	margin: 5px 1px 5px 1px;
 	text-align: center;
@@ -147,6 +152,7 @@ float: left;
 
 .footer {
 	position: fixed;
+	padding: 30px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -173,6 +179,8 @@ float: left;
 }
 
 .contactform h1{
+	font-size: 18px;
+	font-weight: bold;
 	padding: 20px;
 	display: block;
 	background-color: #ffe761;
@@ -183,7 +191,7 @@ float: left;
 
 .contactform h1>span {
 	display: block;
-	font-size: 13px;
+	font-size: 18px;
 }
 
 .contactform label {
@@ -192,7 +200,7 @@ float: left;
 
 .contactform label>span 
 {
-	float: left;
+	float: none;
 	width: 20%;
 	text-align: right;
 	margin: 14px;
@@ -208,7 +216,7 @@ float: left;
 	width:70%;
 	font-size: 12px;
 	border-radius: 3px;
-	margin: 5px;
+	margin: 25px;
 
 }
 
@@ -225,6 +233,7 @@ float: left;
 	color: black;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-top: 20px;
 	margin-left: 4px;
 }
 
@@ -235,21 +244,42 @@ float: left;
 
 .portfolio {
 	float: left;
-	clear: right;
+	clear: both;
 	
 	
 }
-.portfolio figure {
+figure {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: bottom;
 	width: 210px;
 	margin: 0px 10px 10px 10px;
 }
- .portfolio figure img {
-	border: 2px;
+ figure img {
+	border: 1px;
 	background-color: #fff;
 	padding: 4px;
-	margin: 2px;
+	
 }
 
- 
+ figcaption {
+ 	font-family: "Libre Franklin", sans-serif;
+ 	font: 1.1em;
+ 	text-align:center;
+ 	margin: 10px 0 0 0;
+ }
+
+ #photo {
+	float: right;
+	clear: both;
+	margin-left: 20%;
+	height: 650px;
+	width: 600px;
+	margin: 200px 10px;
+	margin-right: 35%;
+	border: 5px;
+}
+ .footer p {
+ 	text-align: center;
+ }
+
+
